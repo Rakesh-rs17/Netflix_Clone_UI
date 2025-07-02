@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700@display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 90vw;
+  margin: auto;
+  height: auto;
+  min-height: 70px;
+}
+
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+
+.logobox {
+  flex: 1 1 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logobox>img {
+  width: 200px;
+  height: auto;
+}
+
+
+.registration-box {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border: 3px solid #161718;
+  border-radius: 5px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+}
+
+#lang-picker {
+  border: none;
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #d3c6c6;
+}
+
+
+.signup {
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E50914;
+}
+
+.signup a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.header-info-display {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.promo {
+  font-size: 2rem;
+}
+
+.subs-info {
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.subscription-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.email-form-des {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 1rem;
+  font-weight: 400;
+
+}
+
+.email-input {
+  flex: 1 1 350px;
+}
+
+.email-input input {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(22, 23, 24, 0.9);
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  color: rgb(196, 183, 183);
+  border: 2px solid grey;
+}
+
+.btn-email-submit {
+  flex: 0 1 150px;
+  height: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #E50914;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg-img-bx {
+  width: 100vw;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.bg-img-bx>img {
+  width: 100%;
+  height: auto;
+}
+
+.list-bx {
+  width: 100%;
+  height: 200px;
+  white-space: nowrap;
+}
+
+.trend {
+  height: 500px;
+}
+
+.more,
+.trend,
+.faq {
+  margin-bottom: 40px;
+}
+
+.trend-title,
+.more-title,
+.faq-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.trend-cards {
+  width: 100%;
+  height: auto;
+  border-radius: 2px solid white;
+  white-space: nowrap;
+  overflow-y: visible;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.trend-cards>li {
+  display: inline-block;
+  list-style: none;
+  width: 10vw;
+  height: 35vh;
+  margin: 45px;
+
+}
+
+.list-bx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.arrow-btn {
+  height: 150px;
+  border: 2px solid #1616167e;
+  border-radius: 20px;
+  background-color: #1616167e;
+  box-shadow: none;
+
+}
+
+.card {
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.trend-card-img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.card-img-btn,
+.card,
+.trend-card {
+  background-color: black;
+  background: none;
+  border-style: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .registration-box {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logobox {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .email-input,
+  .btn-email-submit {
+    flex: 1 1 100%;
+  }
+
+  .subscription-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-info-display {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo {
+    font-size: 1.5rem;
+  }
+
+  .subs-info {
+    font-size: 1rem;
+  }
+
+  .signup {
+    width: 100px;
+    height: 40px;
+  }
+
+  .signup a {
+    font-size: 1rem;
+  }
+
+  .btn-email-submit {
+    font-size: 1rem;
+  }
+
+  #lang-picker {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet portrait (max-width: 768px) enhancements */
+@media (max-width: 768px) {
+  .trend-cards > li {
+    width: 40vw;
+    height: auto;
+    margin: 20px;
+  }
+
+  .more-cards {
+    flex-direction: column;
+  }
+
+  .more-card {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+    margin: 15px 0;
+  }
+
+  .faq-card {
+    font-size: 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .membership {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .ms-title-txt {
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin: 20px;
+  }
+
+  .imp-link-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Very small devices: phones below 400px width */
+@media (max-width: 400px) {
+  .header-info-display {
+    padding: 30px 10px;
+  }
+
+  .promo {
+    font-size: 1.3rem;
+  }
+
+  .subs-info {
+    font-size: 0.9rem;
+  }
+
+  .email-form-des {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .btn-email-submit {
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .email-input input {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .trend-cards > li {
+    width: 70vw;
+    margin: 10px;
+  }
+
+  .footer-ln {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact, .terms-of-use-txt {
+    font-size: 0.9rem;
+  }
+
+  .imp-link-cards {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+}
+
+
+.main {
+  margin: 0 10vw;
+}
+
+.more-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.more-card {
+  border-radius: 20px;
+  margin: 0 5px;
+  top: 0;
+  padding: 20px 5px 15px 20px;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.more-readon-card-title {
+  margin-bottom: 5px;
+}
+
+.more-readon-card-title h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.more-readon-card-des {
+  height: 50%;
+}
+
+.more-readon-card-des p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(165, 154, 154);
+}
+
+.more-readon-card-svg-file,
+.more-readon-card-svg-file-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  max-height: fit-content;
+
+  right: 10px;
+}
+
+.more-readon-card-svg-file-item img {
+  position: absolute;
+  height: auto;
+}
+
+.faq-card {
+  margin-bottom: 10px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: rgb(45, 45, 45);
+}
+
+.faq-q-menu-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  height: 10rem;
+  padding: 0;
+}
+
+.membership-bx {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ms-title-txt {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+.ms-email-info {
+  justify-content: center;
+  padding: 0;
+  height: 60%;
+}
+
+.ms-email-form,
+form,
+.ms-email-submit-bx,
+.ms-email-input>input,
+.ms-btn-email-submit {
+  height: 100%;
+}
+
+.ms-btn-email-submit,
+.email-input-box {
+  font-size: 1.5rem;
+}
+
+.ms-email-submit-bx {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.language label {
+  display: none;
+}
+
+.footer-ln {
+  width: 10vw;
+  margin-bottom: 40px;
+}
+
+.footer-logo p {
+  margin-bottom: 40px;
+  color: rgb(189, 189, 189);
+
+}
+
+.terms-of-use-txt {
+  margin-bottom: 20px;
+  color: rgb(189, 189, 189);
+}
+
+.terms-of-use-txt button {
+  text-decoration: underline;
+  border: none;
+  background-color: black;
+  color: rgb(0, 126, 230);
+  font-size: 1rem;
+}
+
+.default-ltr-cache-km743h,
+.default-ltr-cache-km743h a {
+  margin-bottom: 20px;
+  color: rgb(189, 189, 189);
+}
+
+.contact {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+
+}
+
+.contact a {
+  color: rgb(189, 189, 189);
+}
+
+.imp-link-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 50px 0;
+}
+
+.imp-link-cards a {
+  color: rgb(189, 189, 189);
+}
+
+.footer {
+  margin: 0 10vw;
+  margin-top: 40px;
+}
